@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-sw%amgfp8&sjxwtqtbeju270j%@s+y+uzflm2_bd(s&ntu=^h3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '475003c7b643.ngrok.io'
+]
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'uber.apps.UberConfig'
 ]
 
 MIDDLEWARE = [
@@ -123,3 +126,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LINE_CHANNEL_ACCESS_TOKEN = 'LnjdfCND7wPIAvtFMsqK3hHuIGY1ZAy4OM4r04CUI8E108f+7US7q/M33q393dMm7bIfk5ZKz9YgMEqCGQEhzXX0OcyAgnKvHLCiyfrUYc5sPu8ICR/oK0zXWWuJqzjlndnTNgG6EFEUUPRHywRNQAdB04t89/1O/w1cDnyilFU='
+
+LINE_CHANNEL_SECRET = 'd5bf412afc2e90db887eb0082fb10488'
